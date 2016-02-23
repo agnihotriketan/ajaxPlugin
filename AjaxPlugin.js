@@ -39,9 +39,9 @@ var ajaxPlugin = (function ($) {
 
             formatUrl: function (url) {
                 var newUrl = url;
-                var paramsToBePersisted = parameterToKeep;
-                if (paramsToBePersisted && paramsToBePersisted.length) {
-                    paramsToBePersisted.forEach(function (query) {
+                var toBePersisted = parameterToKeep;
+                if (toBePersisted && toBePersisted.length) {
+                    toBePersisted.forEach(function (query) {
                         var existingValue = this.getQueryParameterValue(query); 
                         if (!this.getQueryParameterValue(query, newUrl)) {
                             newUrl = this.appendQueryString(newUrl, query, existingValue);
