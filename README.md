@@ -1,12 +1,12 @@
 #Plug & Play Ajax Plugin
 Add refrence to the page where you want to do ajax request to get data.
 ## Sample usage
-> ajaxPlugin.ajax.post({
+ajaxPlugin.ajax.post({
             url: url,
             data: data
         });
 
->var deferred = $.Deferred(); 
+var deferred = $.Deferred(); 
 
 var promise = ajaxPlugin.ajax.get({ url: url });
 
